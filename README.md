@@ -13,8 +13,7 @@ best day to purchase the stock and which day was the best day to sell the stock.
 - Profit should be taken as early as possible.
 
 ## Constraint
-- A stock much be purchased on a day before it can be sold.
--
+- A stock must be purchased on a day before it can be sold.
 
 examples:
 ```
@@ -38,8 +37,8 @@ irb(main):003> stockpicker(stock_prices)
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [3,5,3,5,3,5]
 irb(main):003> stockpicker(stock_prices)
-  Daily Prices: [3, 5, 3, 5, 3, 5]
 
+  Daily Prices: [3, 5, 3, 5, 3, 5]
 ================================================================================
    Buy on: 0 at 3
   Sell on: 1 at 5
