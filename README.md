@@ -19,56 +19,103 @@ best day to purchase the stock and which day was the best day to sell the stock.
 examples:
 ```
 irb(main):001> load "./stockpicker.rb"
+=> true
 irb(main):002> stock_prices = [17,3,6,9,15,8,6,1,10]
 irb(main):003> stockpicker(stock_prices)
-=>
-[1,4]
+
+  Daily Prices: [17, 3, 6, 9, 15, 8, 6, 1, 10]
+================================================================================
+   Buy on: 1 at 3
+  Sell on: 4 at 15
+   Profit: 12
+================================================================================
+
+=> [1, 4]
+
 ```
 
 ```
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [3,5,3,5,3,5]
 irb(main):003> stockpicker(stock_prices)
-=>
-[0,1]
+  Daily Prices: [3, 5, 3, 5, 3, 5]
+
+================================================================================
+   Buy on: 0 at 3
+  Sell on: 1 at 5
+   Profit: 2
+================================================================================
+
+=> [0, 1]
 ```
 
 ```
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [3,4,5,3,4,10]
 irb(main):003> stockpicker(stock_prices)
-=>
-[3,5]
+
+  Daily Prices: [3, 4, 5, 3, 4, 10]
+================================================================================
+   Buy on: 3 at 3
+  Sell on: 5 at 10
+   Profit: 7
+================================================================================
+
+=> [3, 5]
+
 ```
 
 ```
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [5,3,5]
 irb(main):003> stockpicker(stock_prices)
-=>
-[1,2]
+
+  Daily Prices: [5, 3, 5]
+================================================================================
+   Buy on: 1 at 3
+  Sell on: 2 at 5
+   Profit: 2
+================================================================================
+
+=> [1, 2]
+
 ```
 
 ```
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [20,19,18,17,16,15,14]
 irb(main):003> stockpicker(stock_prices)
-=>
-[]
+
+  Daily Prices: [20, 19, 18, 17, 16, 15, 14]
+================================================================================
+There was no winning move.
+
+=> []
+
 ```
 
 ```
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [20]
 irb(main):003> stockpicker(stock_prices)
-=>
-[]
+
+  Daily Prices: [20, 19, 18, 17, 16, 15, 14]
+================================================================================
+There was no winning move.
+
+=> []
+
 ```
 
 ```
 irb(main):001> load "./stockpicker.rb"
 irb(main):002> stock_prices = [5,5,5,5]
 irb(main):003> stockpicker(stock_prices)
-=>
-[]
+
+  Daily Prices: [20, 19, 18, 17, 16, 15, 14]
+================================================================================
+There was no winning move.
+
+=> []
+
 ```

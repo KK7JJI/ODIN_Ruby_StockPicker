@@ -9,10 +9,10 @@ def stockpicker(stock_prices)
     valid_price_combos = get_valid_price_combinations(stock_prices)
     best_prices = get_best_buy_sell_prices(valid_price_combos)
     buy_sell_days = get_buy_sell_days(best_prices, stock_prices)
-    print_results(stock_prices, buy_sell_days)
 
   end
   print_results(stock_prices, buy_sell_days)
+  buy_sell_days
 
 end
 
@@ -72,6 +72,7 @@ end
 
 def print_results(stock_prices, buy_sell_days)
 
+  puts ""
   puts "  Daily Prices: #{stock_prices}"
   puts "="*80
 
