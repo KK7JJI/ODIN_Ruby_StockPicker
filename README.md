@@ -13,7 +13,8 @@ best day to purchase the stock and which day was the best day to sell the stock.
 - Profit should be taken as early as possible.
 
 ## Constraint
-- A stock must be purchased on a day before it can be sold.
+- A stock must be purchased before it can be sold.
+- The purchase day must occur before the sale day.
 
 examples:
 ```
